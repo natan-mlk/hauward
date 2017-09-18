@@ -1,0 +1,100 @@
+$base: #335c67;
+$light-base: #517d89;
+
+@mixin dots ($size, $dot, $baseback, $accent) {
+  background: $baseback;
+  background-image: 
+  radial-gradient($accent $dot, transparent 0),
+  radial-gradient($accent $dot, transparent 0);
+  background-size: $size $size;
+  background-position: 0 0, $size/2 $size/2;
+}
+
+@font-face {
+  font-family: 'Bellefair';
+  font-style: normal;
+  font-weight: 400;
+  src: url(http://fonts.gstatic.com/s/bellefair/v2/FQ4TK28OMWzJh6316k7Y7xJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Coiny';
+  font-style: normal;
+  font-weight: 400;
+  src: url(http://fonts.gstatic.com/s/coiny/v2/dLc6kFPyyJVRCRynTSnzOw.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Coiny';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Coiny Regular'), local('Coiny-Regular'), url(http://fonts.gstatic.com/s/coiny/v2/yLjI2gVbVWWmvUcD--_G4Q.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+body {
+  background-color: #fff8f0;
+  height: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-size: 15px;
+  font-family: Coiny, sans-serif;
+}
+
+.col-nav {
+  @include dots(30px, 15%, $base, #608088);
+  height: 100%;
+  width: 20%;
+  float: left;
+  position: fixed;
+  margin-left: 10%;
+  nav {
+    width: 100%;
+    color: white;
+    background-color: $base;
+    .active {
+      background-color: $light-base;
+      span::before,
+      span::after {
+        display: inline-block;
+        content:'';
+        width: 16px;
+        height: 16px;
+        margin: 0 10px;
+        background: url("img/paw-nav.png") no-repeat 0 0 ;
+        background-size: 100%;
+      }
+    }
+    .nav-button {
+      text-align: center;
+      padding: 5px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:hover {
+        background-color: $light-base;
+      }
+    }
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+  }
+}
+
+* a {
+  font-family: Coiny, sans-serif;
+}
+
+.col-content {
+  height: 100%;
+  width: 70%;
+  float: left;
+  margin-left: 30%;
+}
+
+.clear {clear: both}
