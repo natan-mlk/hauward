@@ -2,10 +2,9 @@ $base: #335c67;
 $light-base: #517d89;
 $dark-base: #1c3e47;
 
-@mixin dots ($size, $dot, $baseback, $accent) {
+@mixin dots($size, $dot, $baseback, $accent) {
   background: $baseback;
-  background-image: 
-  radial-gradient($accent $dot, transparent 0),
+  background-image: radial-gradient($accent $dot, transparent 0),
   radial-gradient($accent $dot, transparent 0);
   background-size: $size $size;
   background-position: 0 0, $size/2 $size/2;
@@ -13,86 +12,79 @@ $dark-base: #1c3e47;
 
 //kkk
 
-/* latin-ext */
-@font-face {
-  font-family: 'kkk';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Wellfleet'), local('Wellfleet-Regular'), url(http://fonts.gstatic.com/s/wellfleet/v4/Hrlltf_-VcwaRNHdrDwsexJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'kkk';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Wellfleet'), local('Wellfleet-Regular'), url(http://fonts.gstatic.com/s/wellfleet/v4/qu15OBOh_Q0T8ooRUaKSDVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-}
 
+//@font-face {
+//  font-family: 'kkk';
+//  font-style: normal;
+//  font-weight: 400;
+//  src: local('Wellfleet'), local('Wellfleet-Regular'), url(http://fonts.gstatic.com/s/wellfleet/v4/Hrlltf_-VcwaRNHdrDwsexJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+//  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+//}
+//
+//@font-face {
+//  font-family: 'kkk';
+//  font-style: normal;
+//  font-weight: 400;
+//  src: local('Wellfleet'), local('Wellfleet-Regular'), url(http://fonts.gstatic.com/s/wellfleet/v4/qu15OBOh_Q0T8ooRUaKSDVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+//  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+//}
 
 // Fajna jeśli zwiększyć letter spacing
-/* latin-ext */
+
 @font-face {
-  font-family: 'ddd';
+  font-family: 'kkk';
   font-style: normal;
   font-weight: 400;
   src: local('Stint Ultra Condensed'), local('StintUltraCondensed-Regular'), url(http://fonts.gstatic.com/s/stintultracondensed/v5/8DqLK6-YSClFZt3u3EgOUZ0M7CckEjtJ2VMldUDu5nQ.woff2) format('woff2');
   unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
-/* latin */
+
+
 @font-face {
-  font-family: 'ddd';
+  font-family: 'kkk';
   font-style: normal;
   font-weight: 400;
   src: local('Stint Ultra Condensed'), local('StintUltraCondensed-Regular'), url(http://fonts.gstatic.com/s/stintultracondensed/v5/8DqLK6-YSClFZt3u3EgOUcBvcTyoFVl2hWxSOgahpEY.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
-
 //ta też ok
 
-/* latin-ext */
-@font-face {
-  font-family: 'aaa';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Oldenburg'), local('Oldenburg-Regular'), url(http://fonts.gstatic.com/s/oldenburg/v4/OmRJVzACJxBuDlb8Qnj0sBJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'aaa';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Oldenburg'), local('Oldenburg-Regular'), url(http://fonts.gstatic.com/s/oldenburg/v4/CRS5ubi7Czjub7bFdKPY-VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-}
+//@font-face {
+//  font-family: 'kkk';
+//  font-style: normal;
+//  font-weight: 400;
+//  src: local('Oldenburg'), local('Oldenburg-Regular'), url(http://fonts.gstatic.com/s/oldenburg/v4/OmRJVzACJxBuDlb8Qnj0sBJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+//  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+//}
+//
+//@font-face {
+//  font-family: 'kkk';
+//  font-style: normal;
+//  font-weight: 400;
+//  src: local('Oldenburg'), local('Oldenburg-Regular'), url(http://fonts.gstatic.com/s/oldenburg/v4/CRS5ubi7Czjub7bFdKPY-VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+//  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+//}
 
 //Ta była bardzo ok
 
-/* latin-ext */
-@font-face {
-  font-family: 'Enriqueta';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Enriqueta-Regular'), url(http://fonts.gstatic.com/s/enriqueta/v5/iKmJkNq7osgLqqCZ6_EWcxJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Enriqueta';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Enriqueta-Regular'), url(http://fonts.gstatic.com/s/enriqueta/v5/-KTKVm0Mx9ZCRXL9CXVIbVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-}
-
-
-
+//@font-face {
+//  font-family: 'kkk';
+//  font-style: normal;
+//  font-weight: 400;
+//  src: local('Enriqueta-Regular'), url(http://fonts.gstatic.com/s/enriqueta/v5/iKmJkNq7osgLqqCZ6_EWcxJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+//  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+//}
+//
+//@font-face {
+//  font-family: 'kkk';
+//  font-style: normal;
+//  font-weight: 400;
+//  src: local('Enriqueta-Regular'), url(http://fonts.gstatic.com/s/enriqueta/v5/-KTKVm0Mx9ZCRXL9CXVIbVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+//  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+//}
 
 //--------------------
-
 
 /* latin-ext */
 @font-face {
@@ -102,6 +94,7 @@ $dark-base: #1c3e47;
   src: local('Raleway'), local('Raleway-Regular'), url(http://fonts.gstatic.com/s/raleway/v11/yQiAaD56cjx1AooMTSghGfY6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
   unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
+
 /* latin */
 @font-face {
   font-family: 'hhh';
@@ -119,6 +112,7 @@ $dark-base: #1c3e47;
   src: local('Fira Sans Extra Condensed Regular'), local('FiraSansExtraCondensed-Regular'), url(http://fonts.gstatic.com/s/firasansextracondensed/v1/wg_5XrW_o1_ZfuCbAkBfGQCHOeWCQWG0jW-ep4kIJ70SbZyiE6aTiPyL3F1wza7H.woff2) format('woff2');
   unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
+
 /* latin */
 @font-face {
   font-family: 'Fira Sans Extra Condensed';
@@ -138,6 +132,7 @@ $dark-base: #1c3e47;
   src: local('Lato Regular'), local('Lato-Regular'), url(http://fonts.gstatic.com/s/lato/v13/UyBMtLsHKBKXelqf4x7VRQ.woff2) format('woff2');
   unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
+
 /* latin */
 @font-face {
   font-family: 'Lato';
@@ -147,81 +142,126 @@ $dark-base: #1c3e47;
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
-
-
 body {
   background-color: #fff8f0;
   height: 100%;
   box-sizing: border-box;
   margin: 0;
   position: relative;
-  font-size: 15px;
+  font-size: 19px;
   font-family: Lato, sans-serif;
+}
+
+.top {
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  position: fixed;
+  box-shadow: 0 2px 10px 0 rgba(0,0,0,0.75);
+  text-align: center;
+  font-family: kkk, sans-serif;
+  font-size: 3rem;
+}
+
+.logo-ribbon {
+  text-align: center;
+  position: fixed;
+  top: 0;
+  right: 5%;
+  width: 13%;
+  min-width: 180px;
+  img {
+    width: 100%;
+  }
+  //background: url("img/logo-ribbon.png") no-repeat top center ;
+  //background-size: contain;
+  //width: 100%;
+  //height: 350px;
 }
 
 .col-nav {
   @include dots(30px, 15%, $base, #608088);
   height: 100%;
   width: 30%;
-  max-width: 420px;
+  max-width: 400px;
   float: left;
   position: fixed;
-  margin-left: 10%;
-  .logo-ribbon {
+  margin-left: 6%;
+  .half-circle {
+    width: 45%;
+    max-width: 250px;
+    background-color: $light-base;
+    margin: 40px auto 0;
+    padding: 8px 0 3px;
+    border-radius: 50% / 100% 100% 0 0;
+    font-size: 1.4rem;
+
+    color: white;
     text-align: center;
-    background: url("img/logo-ribbon.png") no-repeat top center ;
-    background-size: contain;
-    width: 100%;
-    height: 350px;
+    font-family: kkk, sans-serif;
   }
   .ribbon {
     width: 100%;
     height: 98px;
-    margin: -70px 0 0;
-    background: url("img/ribbon-background.png") repeat 0 0 ;
+    background: url(img/ribbon-background.png) repeat-x 0 0;
+    background-size: auto 98px;
     color: white;
     text-align: center;
     font-size: 2rem;
     font-family: kkk, sans-serif;
+
+    //display: flex;
+    //justify-content: center;
+    //align-items: center;
+
     .r-r {
       float: right;
-      margin-right: -58px
+      margin-right: -58px;
+      //align-self: flex-start;
     }
     .r-l {
       float: left;
       margin-left: -58px;
+      //align-self: flex-end;
     }
     span {
       text-transform: uppercase;
+      display: inline-block;
+      margin-top: 20px;
     }
   }
   .year {
-    width: 200px;
+    width: 65%;
+    max-width: 250px;
     color: white;
     text-align: center;
-    margin: -10px auto 0;
+    margin: -12px auto 0;
     background-color: $light-base;
+    font-family: kkk, sans-serif;
+    font-size: 1.7rem;
+    padding: 5px 0 7px;
   }
   nav {
     width: 100%;
     color: white;
     background-color: $base;
-    margin: 5% 0 0;
+    margin: 15% 0 0;
     .active {
       background-color: $light-base;
       span::before,
       span::after {
         display: inline-block;
-        content:'';
+        content: '';
         width: 16px;
         height: 16px;
         margin: 0 10px;
-        background: url("img/paw-nav.png") no-repeat 0 0 ;
+        background: url("img/paw-nav.png") no-repeat 0 0;
         background-size: 100%;
       }
     }
     .nav-button {
       text-align: center;
+      letter-spacing: 2px;
       padding: 5px 0;
       display: flex;
       align-items: center;
@@ -231,11 +271,14 @@ body {
         background-color: $light-base;
       }
     }
+    .last {
+      border-bottom: solid 1px $dark-base;
+    }
   }
   nav a {
     color: white;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -250,4 +293,6 @@ body {
   margin-left: 30%;
 }
 
-.clear {clear: both}
+.clear {
+  clear: both
+}
