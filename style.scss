@@ -182,8 +182,8 @@ body {
 .col-nav {
   @include dots(30px, 15%, $base, #608088);
   height: 100%;
-  width: 30%;
-  max-width: 400px;
+  width: 20%;
+  max-width: 380px;
   float: left;
   position: fixed;
   margin-left: 6%;
