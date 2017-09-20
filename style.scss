@@ -179,6 +179,13 @@ body {
   //height: 350px;
 }
 
+.col-blank {
+  height: 100%;
+  width: 20%;
+  max-width: 380px;
+  position: absolute;
+}
+
 .col-nav {
   @include dots(30px, 15%, $base, #608088);
   height: 100%;
@@ -192,9 +199,9 @@ body {
     max-width: 250px;
     background-color: $light-base;
     margin: 40px auto 0;
-    padding: 8px 0 3px;
+    padding: 4px 0 0;
     border-radius: 50% / 100% 100% 0 0;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 
     color: white;
     text-align: center;
@@ -202,12 +209,12 @@ body {
   }
   .ribbon {
     width: 100%;
-    height: 98px;
+    height: 72px;
     background: url(img/ribbon-background.png) repeat-x 0 0;
-    background-size: auto 98px;
+    background-size: auto 72px;
     color: white;
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.7rem;
     font-family: kkk, sans-serif;
 
     //display: flex;
@@ -227,7 +234,7 @@ body {
     span {
       text-transform: uppercase;
       display: inline-block;
-      margin-top: 20px;
+      margin-top: 12px;
     }
   }
   .year {
@@ -235,12 +242,13 @@ body {
     max-width: 250px;
     color: white;
     text-align: center;
-    margin: -12px auto 0;
+    margin: 0 auto 0;
     background-color: $light-base;
     font-family: kkk, sans-serif;
-    font-size: 1.7rem;
-    padding: 5px 0 7px;
+    font-size: 1.4rem;
+    padding: 0 0 4px;
   }
+
   nav {
     width: 100%;
     color: white;
