@@ -403,3 +403,71 @@ h2 {
     }
   }
 }
+
+@media only screen and (max-width: 1440px) {
+
+  body {
+    font-size: 17px;
+  }
+
+  .important-txt {
+    font-size: 1.6rem;
+  }
+
+  .col-nav {
+    @include dots(30px, 15%, $base, #608088);
+    height: 100%;
+    width: 20%;
+    max-width: 380px;
+    float: left;
+    position: fixed;
+    margin-left: 6%;
+    .half-circle {
+      margin: 18px auto 0;
+    }
+    nav {
+      margin: 10% 0 0;
+    }
+    nav a {
+      font-size: 1.1rem;
+    }
+  }
+
+}
+
+
+@media only screen and (max-width: 1366px) {
+.col-nav .ribbon {
+  width: 100%;
+  height: 60px;
+  background: url(img/ribbon-background.png) repeat-x 0 0;
+  background-size: auto 60px;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  font-family: kkk, sans-serif;
+  margin-top: 14px;
+}
+
+  .col-nav .ribbon .r-r {
+    margin-right: -48px;
+    height: 89px;
+  }
+
+  .col-nav .ribbon .r-l {
+    margin-left: -48px;
+    height: 89px;
+  }
+
+  .col-nav .half-circle {
+    display: none;
+  }
+
+  .col-nav .year {
+    display: none;
+  }
+
+  .col-nav nav .nav-button {
+    padding: 4px 0;
+  }
+}
