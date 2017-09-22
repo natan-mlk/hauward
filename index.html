@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
 
@@ -26,53 +27,55 @@
     <div class="title">Szkoła Hauward</div>
     <div id="menuOpen">Menu</div>
     <div id="menuClose">X</div>
+
+    <nav class="nav-mobile mobile">
+        <a href="#">
+            <div class="nav-button  active"><span>Strona główna</span></div>
+        </a>
+        <a href="#">
+            <div class="nav-button"><span>Historia</span></div>
+        </a>
+        <a href="kadra.html">
+            <div class="nav-button"><span>Kadra pedagogiczna</span></div>
+        </a>
+        <a href="#">
+            <div class="nav-button"><span>Z ostatniej chwili</span></div>
+        </a>
+        <a href="#">
+            <div class="nav-button"><span>Co daje szkolenie</span></div>
+        </a>
+        <a href="#">
+            <div class="nav-button"><span>Jak szkolimy</span></div>
+        </a>
+        <a href="#">
+            <div class="nav-button"><span>Rodzaje kursów</span></div>
+        </a>
+        <a href="#">
+            <div class="nav-button"><span>Terminy szkoleń</span></div>
+        </a>
+        <a href="#">
+            <div class="nav-button"><span>Promocje</span></div>
+        </a>
+        <a href="#">
+            <div class="nav-button"><span>Lekarz radzi</span></div>
+        </a>
+        <a href="#">
+            <div class="nav-button"><span>Hauuu-Ward dzieciom</span></div>
+        </a>
+        <a href="#">
+            <div class="nav-button"><span>Zdjęcia uczniów</span></div>
+        </a>
+        <a href="#">
+            <div class="nav-button"><span>Kontakt</span></div>
+        </a>
+        <a href="#">
+            <div class="nav-button last"><span>Cennik</span></div>
+        </a>
+
+    </nav>
 </div>
 
-<nav class="nav-mobile mobile">
-    <a href="#">
-        <div class="nav-button  active"><span>Strona główna</span></div>
-    </a>
-    <a href="#">
-        <div class="nav-button"><span>Historia</span></div>
-    </a>
-    <a href="kadra.html">
-        <div class="nav-button"><span>Kadra pedagogiczna</span></div>
-    </a>
-    <a href="#">
-        <div class="nav-button"><span>Z ostatniej chwili</span></div>
-    </a>
-    <a href="#">
-        <div class="nav-button"><span>Co daje szkolenie</span></div>
-    </a>
-    <a href="#">
-        <div class="nav-button"><span>Jak szkolimy</span></div>
-    </a>
-    <a href="#">
-        <div class="nav-button"><span>Rodzaje kursów</span></div>
-    </a>
-    <a href="#">
-        <div class="nav-button"><span>Terminy szkoleń</span></div>
-    </a>
-    <a href="#">
-        <div class="nav-button"><span>Promocje</span></div>
-    </a>
-    <a href="#">
-        <div class="nav-button"><span>Lekarz radzi</span></div>
-    </a>
-    <a href="#">
-        <div class="nav-button"><span>Hauuu-Ward dzieciom</span></div>
-    </a>
-    <a href="#">
-        <div class="nav-button"><span>Zdjęcia uczniów</span></div>
-    </a>
-    <a href="#">
-        <div class="nav-button"><span>Kontakt</span></div>
-    </a>
-    <a href="#">
-        <div class="nav-button last"><span>Cennik</span></div>
-    </a>
 
-</nav>
 
 
 <div class="col-nav">
@@ -210,16 +213,12 @@
 </div>
 <div class="clear"></div>
 
-
 <script>
 
-    console.log('start');
-
-
     $('#menuOpen').on('click', function () {
-            $('.nav-mobile').slideDown();
-            $(this).hide();
-            $('#menuClose').show()
+        $('.nav-mobile').slideDown();
+        $(this).hide();
+        $('#menuClose').show()
     });
 
     $('#menuClose').on('click', function () {
@@ -227,8 +226,6 @@
         $(this).hide();
         $('#menuOpen').show()
     })
-
-
 </script>
 
 </body>

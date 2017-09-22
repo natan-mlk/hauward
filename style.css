@@ -207,6 +207,27 @@ h1 {
   font-size: 1.8rem;
   color: #517d89; }
 
+.staff {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+  .staff a {
+    text-decoration: none; }
+  .staff .person {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .staff .person img {
+      border-radius: 50%;
+      border: solid 10px #335c67;
+      transition: all 200ms; }
+      .staff .person img:hover {
+        border: solid 10px #b04d4d; }
+    .staff .person p {
+      margin: 8px 0; }
+
 @media screen and (min-width: 1025px) {
   .mobile {
     display: none; }
