@@ -66,13 +66,90 @@ body {
 .logo-ribbon {
   display: none; }
 
+#menuOpen {
+  position: fixed;
+  top: 8px;
+  right: 10px;
+  z-index: 30;
+  color: white;
+  font-family: Fira Sans Extra Condensed, sans-serif;
+  text-transform: uppercase;
+  width: 70px;
+  text-align: center;
+  padding: 5px 0;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  border: solid white 2px; }
+
+#menuClose {
+  position: fixed;
+  top: 8px;
+  right: 10px;
+  z-index: 30;
+  display: none;
+  color: white;
+  font-family: Fira Sans Extra Condensed, sans-serif;
+  text-transform: uppercase;
+  width: 70px;
+  text-align: center;
+  padding: 5px 0;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  border: solid white 2px; }
+
 .header-nav {
   width: 100%;
-  height: 100px;
-  background-color: white;
+  height: 50px;
+  background-color: #1c3e47;
+  color: white;
   position: fixed;
   top: 0;
-  left: 0; }
+  left: 0;
+  z-index: 20; }
+  .header-nav .title {
+    padding: 7px 0 0 20px;
+    font-family: kkk, sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase; }
+
+nav.mobile {
+  width: 100%;
+  background-color: #335c67;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  display: none; }
+  nav.mobile a {
+    color: white;
+    text-decoration: none;
+    font-family: kkk, sans-serif;
+    font-size: 1.3rem; }
+  nav.mobile .active {
+    background-color: #517d89; }
+    nav.mobile .active span::before,
+    nav.mobile .active span::after {
+      display: inline-block;
+      content: '';
+      width: 16px;
+      height: 16px;
+      margin: 0 10px;
+      background: url("img/paw-nav.png") no-repeat 0 0;
+      background-size: 100%; }
+  nav.mobile .nav-button {
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: solid 1px #1c3e47;
+    transition: all 200ms; }
+    nav.mobile .nav-button:hover {
+      background-color: #517d89; }
+  nav.mobile .last {
+    border-bottom: solid 1px #1c3e47; }
 
 .logo {
   width: 100%;
@@ -84,7 +161,8 @@ body {
 .col-content {
   height: 100%;
   width: 90%;
-  margin: 100px auto;
+  margin: 0 auto;
+  padding-top: 50px;
   line-height: 1.5; }
 
 ul {
@@ -96,6 +174,9 @@ h1,
 h2 {
   color: #1c3e47;
   padding: 0 0 0 30px; }
+
+h1 {
+  font-size: 1.6rem; }
 
 .dog-break {
   margin: 5% 0;
@@ -129,6 +210,9 @@ h2 {
 @media screen and (min-width: 1025px) {
   .mobile {
     display: none; }
+
+  h1 {
+    font-size: 2.7rem; }
 
   .col-nav,
   .top,
