@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hauward</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
-    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
 
@@ -30,7 +28,7 @@
 
     <nav class="nav-mobile mobile">
         <a href="#">
-            <div class="nav-button  active"><span>Strona główna</span></div>
+            <div class="nav-button active"><span>Strona główna</span></div>
         </a>
         <a href="#">
             <div class="nav-button"><span>Historia</span></div>
@@ -40,9 +38,6 @@
         </a>
         <a href="#">
             <div class="nav-button"><span>Z ostatniej chwili</span></div>
-        </a>
-        <a href="#">
-            <div class="nav-button"><span>Co daje szkolenie</span></div>
         </a>
         <a href="#">
             <div class="nav-button"><span>Jak szkolimy</span></div>
@@ -56,15 +51,7 @@
         <a href="#">
             <div class="nav-button"><span>Promocje</span></div>
         </a>
-        <a href="#">
-            <div class="nav-button"><span>Lekarz radzi</span></div>
-        </a>
-        <a href="#">
-            <div class="nav-button"><span>Hauuu-Ward dzieciom</span></div>
-        </a>
-        <a href="#">
-            <div class="nav-button"><span>Zdjęcia uczniów</span></div>
-        </a>
+
         <a href="#">
             <div class="nav-button"><span>Kontakt</span></div>
         </a>
@@ -151,7 +138,6 @@
 
     <div class="logo mobile">
         <img src="img/logo-ribbon.png">
-        <!--<img class="" src="img/logo.gif">-->
     </div>
 
     <h1>Witaj w szkole Hauward!</h1>
@@ -213,20 +199,7 @@
 </div>
 <div class="clear"></div>
 
-<script>
-
-    $('#menuOpen').on('click', function () {
-        $('.nav-mobile').slideDown();
-        $(this).hide();
-        $('#menuClose').show()
-    });
-
-    $('#menuClose').on('click', function () {
-        $('.nav-mobile').slideUp();
-        $(this).hide();
-        $('#menuOpen').show()
-    })
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
