@@ -32,20 +32,30 @@ $red: #b04d4d;
 
 // Fajna jeśli zwiększyć letter spacing
 
-@font-face {
-  font-family: 'kkk';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Stint Ultra Condensed'), local('StintUltraCondensed-Regular'), url(http://fonts.gstatic.com/s/stintultracondensed/v5/8DqLK6-YSClFZt3u3EgOUZ0M7CckEjtJ2VMldUDu5nQ.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-}
+//@font-face {
+//  font-family: 'kkk';
+//  font-style: normal;
+//  font-weight: 400;
+//  src: local('Stint Ultra Condensed'), local('StintUltraCondensed-Regular'), url(vendor/StintUltraCondensed-Regular.ttf) format('ttf');
+//  //src: local('Stint Ultra Condensed'), local('StintUltraCondensed-Regular'), url(http://fonts.gstatic.com/s/stintultracondensed/v5/8DqLK6-YSClFZt3u3EgOUZ0M7CckEjtJ2VMldUDu5nQ.woff2) format('woff2');
+//  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+//}
+//
+//@font-face {
+//  font-family: 'kkk';
+//  font-style: normal;
+//  font-weight: 400;
+//  src: local('Stint Ultra Condensed'), local('StintUltraCondensed-Regular'), url(vendor/StintUltraCondensed-Regular.ttf) format('ttf');
+//  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+//}
 
 @font-face {
-  font-family: 'kkk';
+  font-family: "kkk";
+  src: url("vendor/fonts/StintUltraCondensed-Regular.ttf") format("truetype"), url("vendor/fonts/StintUltraCondensed-Regular.woff") format("woff"), url("vendor/fonts/StintUltraCondensed-Regular.eot?") format("eot"), url("vendor/fonts/StintUltraCondensed-Regular.svg#StintUltraCondensed-Regular") format("svg");
+  font-weight: normal;
   font-style: normal;
-  font-weight: 400;
-  src: local('Stint Ultra Condensed'), local('StintUltraCondensed-Regular'), url(http://fonts.gstatic.com/s/stintultracondensed/v5/8DqLK6-YSClFZt3u3EgOUcBvcTyoFVl2hWxSOgahpEY.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215,
+  U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
 
 //ta też ok
@@ -122,25 +132,6 @@ $red: #b04d4d;
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
-//------ LATO
-
-/* latin-ext */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'), url(http://fonts.gstatic.com/s/lato/v13/UyBMtLsHKBKXelqf4x7VRQ.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-}
-
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'), url(http://fonts.gstatic.com/s/lato/v13/1YwB1sO8YE1Lyjf12WNiUA.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-}
 
 body {
   background-color: #fff8f0;
@@ -149,7 +140,7 @@ body {
   margin: 0;
   position: relative;
   font-size: 19px;
-  font-family: Fira Sans Extra Condensed, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 .col-nav,
@@ -337,6 +328,7 @@ h1 {
   width: 100%;
   display: flex;
   flex-direction: column;
+  -webkit-flex-direction: column;
   justify-content: space-around;
   a {
     text-decoration: none;
@@ -370,6 +362,7 @@ h1 {
     float: left;
     position: relative;
     padding-bottom: 22%;
+    clear: none;
     .inner {
       position: absolute;
       left: 2px;
@@ -408,6 +401,8 @@ h1 {
     text-align: center;
     font-family: kkk, sans-serif;
     font-size: 3rem;
+
+    z-index: 5;
     .col-1 {
       height: 100%;
       width: 30%;
@@ -422,7 +417,7 @@ h1 {
     }
     .line {
       height: 100%;
-      width: 10%;
+      width: 7%;
       float: left;
       background: url("img/line-top.png") no-repeat center center;
     }
@@ -435,20 +430,10 @@ h1 {
     right: 5%;
     width: 13%;
     min-width: 180px;
+    z-index: 10;
     img {
       width: 100%;
     }
-    //background: url("img/logo-ribbon.png") no-repeat top center ;
-    //background-size: contain;
-    //width: 100%;
-    //height: 350px;
-  }
-
-  .col-blank {
-    height: 100%;
-    width: 20%;
-    max-width: 380px;
-    position: absolute;
   }
 
   .col-nav {
@@ -459,6 +444,7 @@ h1 {
     float: left;
     position: fixed;
     margin-left: 6%;
+    z-index: 10;
     .half-circle {
       width: 45%;
       max-width: 250px;
@@ -482,19 +468,13 @@ h1 {
       font-size: 2.7rem;
       font-family: kkk, sans-serif;
 
-      //display: flex;
-      //justify-content: center;
-      //align-items: center;
-
       .r-r {
         float: right;
         margin-right: -58px;
-        //align-self: flex-start;
       }
       .r-l {
         float: left;
         margin-left: -58px;
-        //align-self: flex-end;
       }
       span {
         text-transform: uppercase;
@@ -597,6 +577,7 @@ h1 {
     margin-top: 0;
     width: 100%;
     display: flex;
+    -webkit-flex-direction: row;
     flex-direction: row;
     justify-content: space-around;
     a {
@@ -605,6 +586,7 @@ h1 {
     .person {
       display: flex;
       flex-direction: column;
+      -webkit-flex-direction: column;
       align-items: center;
       img {
         border-radius: 50%;
@@ -621,36 +603,7 @@ h1 {
   }
 }
 
-@media only screen and (max-width: 1440px) {
 
-  body {
-    font-size: 17px;
-  }
-
-  .important-txt {
-    font-size: 1.6rem;
-  }
-
-  .col-nav {
-    @include dots(30px, 15%, $base, #608088);
-    height: 100%;
-    width: 20%;
-    max-width: 380px;
-    float: left;
-    position: fixed;
-    margin-left: 6%;
-    .half-circle {
-      margin: 18px auto 0;
-    }
-    nav {
-      margin: 10% 0 0;
-    }
-    nav a {
-      font-size: 1.1rem;
-    }
-  }
-
-}
 
 @media only screen and (max-width: 1366px) {
   .col-nav .ribbon {
@@ -685,5 +638,44 @@ h1 {
 
   .col-nav nav .nav-button {
     padding: 4px 0;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+
+  body {
+    font-size: 17px;
+  }
+
+  .important-txt {
+    font-size: 1.6rem;
+  }
+
+  .col-nav {
+    @include dots(30px, 15%, $base, #608088);
+    height: 100%;
+    width: 20%;
+    max-width: 380px;
+    float: left;
+    position: fixed;
+    margin-left: 6%;
+    .half-circle {
+      margin: 18px auto 0;
+    }
+    nav {
+      margin: 10% 0 0;
+    }
+    nav a {
+      font-size: 1.1rem;
+    }
+  }
+
+}
+
+@media only screen and (min-width: 1440px) {
+  .top {
+    .line {
+      width: 10%;
+    }
   }
 }

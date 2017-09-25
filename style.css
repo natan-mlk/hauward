@@ -1,15 +1,9 @@
 @font-face {
-  font-family: 'kkk';
+  font-family: "kkk";
+  src: url("vendor/fonts/StintUltraCondensed-Regular.ttf") format("truetype"), url("vendor/fonts/StintUltraCondensed-Regular.woff") format("woff"), url("vendor/fonts/StintUltraCondensed-Regular.eot?") format("eot"), url("vendor/fonts/StintUltraCondensed-Regular.svg#StintUltraCondensed-Regular") format("svg");
+  font-weight: normal;
   font-style: normal;
-  font-weight: 400;
-  src: local("Stint Ultra Condensed"), local("StintUltraCondensed-Regular"), url(http://fonts.gstatic.com/s/stintultracondensed/v5/8DqLK6-YSClFZt3u3EgOUZ0M7CckEjtJ2VMldUDu5nQ.woff2) format("woff2");
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; }
-@font-face {
-  font-family: 'kkk';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Stint Ultra Condensed"), local("StintUltraCondensed-Regular"), url(http://fonts.gstatic.com/s/stintultracondensed/v5/8DqLK6-YSClFZt3u3EgOUcBvcTyoFVl2hWxSOgahpEY.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215; }
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; }
 /* latin-ext */
 @font-face {
   font-family: 'hhh';
@@ -38,20 +32,6 @@
   font-weight: 400;
   src: local("Fira Sans Extra Condensed Regular"), local("FiraSansExtraCondensed-Regular"), url(http://fonts.gstatic.com/s/firasansextracondensed/v1/wg_5XrW_o1_ZfuCbAkBfGVRjX9Jlut_-eN40c1mQErxbV0WvE1cEyAoIq5yYZlSc.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215; }
-/* latin-ext */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Lato Regular"), local("Lato-Regular"), url(http://fonts.gstatic.com/s/lato/v13/UyBMtLsHKBKXelqf4x7VRQ.woff2) format("woff2");
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; }
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Lato Regular"), local("Lato-Regular"), url(http://fonts.gstatic.com/s/lato/v13/1YwB1sO8YE1Lyjf12WNiUA.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215; }
 body {
   background-color: #fff8f0;
   height: 100%;
@@ -59,7 +39,7 @@ body {
   margin: 0;
   position: relative;
   font-size: 19px;
-  font-family: Fira Sans Extra Condensed, sans-serif; }
+  font-family: Helvetica, Arial, sans-serif; }
 
 .col-nav,
 .top,
@@ -212,6 +192,7 @@ h1 {
   width: 100%;
   display: flex;
   flex-direction: column;
+  -webkit-flex-direction: column;
   justify-content: space-around; }
   .staff a {
     text-decoration: none; }
@@ -236,7 +217,8 @@ h1 {
     width: 33%;
     float: left;
     position: relative;
-    padding-bottom: 22%; }
+    padding-bottom: 22%;
+    clear: none; }
     .gallery .gallery-img-box .inner {
       position: absolute;
       left: 2px;
@@ -267,7 +249,8 @@ h1 {
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.75);
     text-align: center;
     font-family: kkk, sans-serif;
-    font-size: 3rem; }
+    font-size: 3rem;
+    z-index: 5; }
     .top .col-1 {
       height: 100%;
       width: 30%;
@@ -280,7 +263,7 @@ h1 {
       align-items: center; }
     .top .line {
       height: 100%;
-      width: 10%;
+      width: 7%;
       float: left;
       background: url("img/line-top.png") no-repeat center center; }
 
@@ -290,15 +273,10 @@ h1 {
     top: 0;
     right: 5%;
     width: 13%;
-    min-width: 180px; }
+    min-width: 180px;
+    z-index: 10; }
     .logo-ribbon img {
       width: 100%; }
-
-  .col-blank {
-    height: 100%;
-    width: 20%;
-    max-width: 380px;
-    position: absolute; }
 
   .col-nav {
     background: #335c67;
@@ -310,7 +288,8 @@ h1 {
     max-width: 380px;
     float: left;
     position: fixed;
-    margin-left: 6%; }
+    margin-left: 6%;
+    z-index: 10; }
     .col-nav .half-circle {
       width: 45%;
       max-width: 250px;
@@ -416,6 +395,7 @@ h1 {
     margin-top: 0;
     width: 100%;
     display: flex;
+    -webkit-flex-direction: row;
     flex-direction: row;
     justify-content: space-around; }
     .staff a {
@@ -423,6 +403,7 @@ h1 {
     .staff .person {
       display: flex;
       flex-direction: column;
+      -webkit-flex-direction: column;
       align-items: center; }
       .staff .person img {
         border-radius: 50%;
@@ -432,30 +413,6 @@ h1 {
           border: solid 10px #b04d4d; }
       .staff .person p {
         margin: 8px 0; } }
-@media only screen and (max-width: 1440px) {
-  body {
-    font-size: 17px; }
-
-  .important-txt {
-    font-size: 1.6rem; }
-
-  .col-nav {
-    background: #335c67;
-    background-image: radial-gradient(#608088 15%, transparent 0), radial-gradient(#608088 15%, transparent 0);
-    background-size: 30px 30px;
-    background-position: 0 0, 15px 15px;
-    height: 100%;
-    width: 20%;
-    max-width: 380px;
-    float: left;
-    position: fixed;
-    margin-left: 6%; }
-    .col-nav .half-circle {
-      margin: 18px auto 0; }
-    .col-nav nav {
-      margin: 10% 0 0; }
-    .col-nav nav a {
-      font-size: 1.1rem; } }
 @media only screen and (max-width: 1366px) {
   .col-nav .ribbon {
     width: 100%;
@@ -484,5 +441,32 @@ h1 {
 
   .col-nav nav .nav-button {
     padding: 4px 0; } }
+@media only screen and (max-width: 1440px) {
+  body {
+    font-size: 17px; }
+
+  .important-txt {
+    font-size: 1.6rem; }
+
+  .col-nav {
+    background: #335c67;
+    background-image: radial-gradient(#608088 15%, transparent 0), radial-gradient(#608088 15%, transparent 0);
+    background-size: 30px 30px;
+    background-position: 0 0, 15px 15px;
+    height: 100%;
+    width: 20%;
+    max-width: 380px;
+    float: left;
+    position: fixed;
+    margin-left: 6%; }
+    .col-nav .half-circle {
+      margin: 18px auto 0; }
+    .col-nav nav {
+      margin: 10% 0 0; }
+    .col-nav nav a {
+      font-size: 1.1rem; } }
+@media only screen and (min-width: 1440px) {
+  .top .line {
+    width: 10%; } }
 
 /*# sourceMappingURL=style.css.map */
